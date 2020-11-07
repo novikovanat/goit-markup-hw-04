@@ -226,19 +226,21 @@ address {
 }
 
 .order-button {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 248px;
+
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
   color: var(--white);
+
+  background-color: var(--accent-color);
   border-width: 0px;
-  width: 200px;
-  height: 50px;
-  margin-top: 30px;
-  margin-left: 248px;
 }
 
 .order-button:hover,
@@ -267,26 +269,26 @@ address {
   margin-right: 30px;
 }
 
-.features-item::before{
+.features-item::before {
   display: inline-block;
   content: "";
   width: 270px;
   height: 120px;
-  background-color:var(--light-background-color) ;
+  background-color: var(--light-background-color);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.attention::before{
-  background-image:url(../images/icons/antenna.svg);
+.attention::before {
+  background-image: url(../images/icons/antenna.svg);
 }
-.punctuality::before{
+.punctuality::before {
   background-image: url(../images/icons/clock.svg);
 }
-.planning::before{
+.planning::before {
   background-image: url(../images/icons/diagram.svg);
 }
-.technology::before{
+.technology::before {
   background-image: url(../images/icons/astronaut.svg);
 }
 
@@ -383,13 +385,6 @@ h4.section-title {
   margin-right: 8px;
 }
 .filter-button {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  line-height: 1.62;
-  color: var(--black);
-  background: var(--light-background-color);
   border-width: 0px;
   border-radius: 4px;
   padding-top: 6px;
@@ -397,6 +392,16 @@ h4.section-title {
   padding-left: 22px;
   padding-right: 22px;
   height: 38px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.62;
+
+  color: var(--black);
+  background: var(--light-background-color);
+
   white-space: nowrap;
 }
 
@@ -413,6 +418,9 @@ h4.section-title {
   margin-bottom: 0px;
 }
 
+.clients {
+  display: flex;
+}
 .portfolio-item {
   flex-basis: calc(100% / 3 - 30px);
 }
