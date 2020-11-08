@@ -154,6 +154,12 @@ address {
   color: var(--accent-color);
 }
 
+.link:hover .icon-envelope,
+.link:focus .icon-envelope,
+.link:hover .icon-smartphone,
+.link:focus .icon-smartphone {
+  fill: var(--accent-color);
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -198,6 +204,7 @@ address {
 .navigation-link {
   color: var(--black);
 }
+
 .header-contacts li + li {
   margin-left: 50px;
 }
@@ -205,6 +212,22 @@ address {
 .header-contacts {
   display: flex;
   margin-left: auto;
+}
+
+.icon-smartphone {
+  height: 16px;
+  width: 10px;
+  fill: var(--icon-color);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.icon-envelope {
+  height: 16px;
+  width: 10px;
+  fill: var(--icon-color);
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .header-address-link {
@@ -434,9 +457,6 @@ h4.section-title {
   fill: var(--icon-color);
 }
 
-/* .social-media-item {
-  padding: 11.1px;
-} */
 .social-media-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -449,10 +469,7 @@ h4.section-title {
   justify-content: center;
   border-radius: 50px;
 }
-.social-media-link:hover,
-.social-media-link:focus {
-  background-color: var(--accent-color);
-}
+
 .social-media-link:hover .social-media-icon,
 .social-media-link:focus .social-media-icon {
   fill: var(--white);
@@ -512,6 +529,9 @@ h4.section-title {
   background-color: var(--dark-background-color);
   color: var(--gray);
 }
+.footer-flex {
+  display: flex;
+}
 .footer-contacts {
   margin-top: 20px;
 }
@@ -530,4 +550,30 @@ h4.section-title {
 }
 .logo-color-footer {
   color: #ffffff;
+}
+/* .footer-media {
+  margin-top: 20px;
+  justify-content: flex-start;
+} */
+.footer-media-title {
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+.footer .social-media-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer .social-media-icon {
+  fill: var(--white);
+}
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-media-footer {
+  margin-left: 70px;
+  margin-top: 12px;
 }
