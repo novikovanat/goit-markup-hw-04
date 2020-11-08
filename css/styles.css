@@ -122,6 +122,7 @@ p {
   --white: #ffffff;
   --dark-background-color: #2f303a;
   --light-background-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -214,23 +215,30 @@ address {
 }
 
 .main-section {
+  background-image: linear-gradient(to right, #2f303a40, #2f303a40),
+    url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--dark-background-color);
+  height: 600px;
+  max-width: 1600px;
+  outline: 1px solid var(--black);
   padding-top: 200px;
   padding-bottom: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .hero {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .order-button {
   width: 200px;
   height: 50px;
   margin-top: 30px;
   margin-left: 248px;
-
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -238,37 +246,30 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white);
-
   background-color: var(--accent-color);
   border-width: 0px;
 }
-
 .order-button:hover,
 .order-button:focus {
   color: var(--accent-color);
   background-color: var(--white);
 }
-
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .list-flex {
   display: flex;
   margin-bottom: 0px;
   justify-content: space-between;
 }
-
 .features-item {
   box-sizing: border-box;
   width: 270px;
 }
-
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .features-item::before {
   display: inline-block;
   content: "";
@@ -278,7 +279,6 @@ address {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .attention::before {
   background-image: url(../images/icons/antenna.svg);
 }
@@ -291,33 +291,27 @@ address {
 .technology::before {
   background-image: url(../images/icons/astronaut.svg);
 }
-
 .gallery {
   padding-bottom: 94px;
 }
 .gallery-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .section-team {
   background-color: var(--light-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .team-member:not(:last-child) {
   margin-right: 30px;
 }
-
 .team-member {
   text-align: center;
   padding-bottom: 30px;
 }
-
 .section-title {
   color: var(--black);
 }
-
 h1.section-title {
   font-size: 44px;
   line-height: 1.36;
@@ -328,14 +322,12 @@ h1.section-title {
   margin: 0px 0px;
   letter-spacing: 0.06em;
 }
-
 h2.section-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
 }
-
 h3.section-title {
   line-height: 1.14;
   text-transform: uppercase;
@@ -343,7 +335,6 @@ h3.section-title {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-
 h4.section-title {
   font-weight: 500;
   font-size: 16px;
@@ -351,30 +342,25 @@ h4.section-title {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-
 .job-title {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
 .project-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   color: var(--black);
 }
-
 .project-title {
   font-size: 16px;
   line-height: 1.87;
 }
-
 .big-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .filter-button-block {
   display: flex;
   width: 611px;
@@ -392,34 +378,29 @@ h4.section-title {
   padding-left: 22px;
   padding-right: 22px;
   height: 38px;
-
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   line-height: 1.62;
-
   color: var(--black);
   background: var(--light-background-color);
-
   white-space: nowrap;
 }
-
 .filter-button:hover,
 .filter-button:focus {
   color: var(--white);
   background-color: var(--accent-color);
 }
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 0px;
 }
-
 .clients {
   display: flex;
+  justify-content: space-between;
 }
 .portfolio-item {
   flex-basis: calc(100% / 3 - 30px);
@@ -442,42 +423,51 @@ h4.section-title {
 .social-media {
   display: flex;
 }
+
+.social-media-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-media-item {
+  width: 44px;
+  height: 44px;
+}
 .icon-block {
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .icon-block:first-child svg {
   width: 44px;
   height: 49px;
 }
-
+.icon-block:not(:last-child) {
+  margin-right: 30px;
+}
 .icon-block:nth-child(2) svg {
   width: 40px;
   height: 52px;
 }
-
 .icon-block:nth-child(3) svg {
   width: 41px;
   height: 42px;
 }
-
 .icon-block:nth-child(4) svg {
   width: 80px;
   height: 42px;
 }
-
 .icon-block:nth-child(5) svg {
   width: 59px;
   height: 47px;
 }
-
 .icon-block:last-child svg {
   width: 88px;
   height: 45px;
 }
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -490,7 +480,6 @@ h4.section-title {
 .address {
   color: var(--white);
 }
-
 .logo {
   font-family: Raleway;
   font-weight: bold;
