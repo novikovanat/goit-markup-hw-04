@@ -308,6 +308,7 @@ address {
 .team-member {
   text-align: center;
   padding-bottom: 30px;
+  background-color: var(--white);
 }
 .section-title {
   color: var(--black);
@@ -371,7 +372,7 @@ h4.section-title {
   margin-right: 8px;
 }
 .filter-button {
-  border-width: 0px;
+  border-width: 0;
   border-radius: 4px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -422,16 +423,39 @@ h4.section-title {
 }
 .social-media {
   display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
 }
 
 .social-media-icon {
   width: 20px;
   height: 20px;
+  fill: var(--icon-color);
 }
 
-.social-media-item {
+/* .social-media-item {
+  padding: 11.1px;
+} */
+.social-media-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-media-link {
   width: 44px;
   height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--accent-color);
+}
+.social-media-link:hover .social-media-icon,
+.social-media-link:focus .social-media-icon {
+  fill: var(--white);
 }
 .icon-block {
   width: 170px;
