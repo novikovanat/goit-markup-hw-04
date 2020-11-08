@@ -457,14 +457,27 @@ h4.section-title {
 .social-media-link:focus .social-media-icon {
   fill: var(--white);
 }
-.icon-block {
+.icon-client {
+  fill: var(--icon-color);
+}
+
+.clients-link {
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+.clients-link:hover .icon-client,
+.clients-link:focus .icon-client {
+  fill: var(--accent-color);
+}
+
 .icon-block:first-child svg {
   width: 44px;
   height: 49px;
@@ -477,7 +490,7 @@ h4.section-title {
   height: 52px;
 }
 .icon-block:nth-child(3) svg {
-  width: 41px;
+  width: 43px;
   height: 42px;
 }
 .icon-block:nth-child(4) svg {
@@ -492,6 +505,7 @@ h4.section-title {
   width: 88px;
   height: 45px;
 }
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
