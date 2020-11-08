@@ -315,6 +315,7 @@ address {
   background-color: var(--light-background-color);
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 4px;
 }
 .attention::before {
   background-image: url(../images/icons/antenna.svg);
