@@ -433,6 +433,7 @@ h4.section-title {
 .filter-button:focus {
   color: var(--white);
   background-color: var(--accent-color);
+  outline: none;
 }
 .portfolio-list {
   display: flex;
@@ -453,6 +454,7 @@ h4.section-title {
 .portfolio-item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
+
 .item-box {
   padding-left: 24px;
   padding-right: 24px;
