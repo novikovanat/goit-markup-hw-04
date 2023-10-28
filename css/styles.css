@@ -87,7 +87,7 @@ body {
 }
 
 .address {
-  margin: auto;
+  margin-left: auto;
   font-style: normal;
   color: #434455;
 }
@@ -132,6 +132,7 @@ body {
   color: #ffffff;
   letter-spacing: 0.02em;
   margin: auto;
+  margin-bottom: 48px;
 }
 
 .headline-button {
