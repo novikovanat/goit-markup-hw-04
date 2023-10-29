@@ -375,3 +375,7 @@ footer .logo {
   display: inline-block;
   margin-bottom: 16px;
 }
+.footer .social-media-link:focus,
+.social-media-link:hover {
+  background-color: #31d0aa;
+}
