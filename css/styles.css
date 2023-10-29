@@ -78,6 +78,7 @@ body {
   display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox; /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Chrome */
+  justify-content: center;
   gap: 24px;
 }
 
@@ -273,11 +274,7 @@ body {
   color: #2e2f42;
   text-align: center;
 }
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
+
 .social-media-item {
   width: 40px;
   height: 40px;
