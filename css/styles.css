@@ -71,6 +71,9 @@ body {
   left: 0;
   bottom: -1px;
 }
+.footer .display-flex-gap-ul {
+  gap: 16px;
+}
 .display-flex-gap-ul {
   display: flex;
 
@@ -117,7 +120,11 @@ body {
 .external-link-colors {
   color: #434455;
 }
-
+p.navigation-menu {
+  padding: 0;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
 .navigation-menu {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -376,6 +383,6 @@ footer .logo {
   margin-bottom: 16px;
 }
 .footer .social-media-link:focus,
-.social-media-link:hover {
+.footer .social-media-link:hover {
   background-color: #31d0aa;
 }
