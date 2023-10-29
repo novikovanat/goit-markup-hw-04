@@ -359,7 +359,10 @@ body {
   background-color: #2e2f42;
   padding: 100px 0 100px;
 }
-
+.wrap {
+  align-items: baseline;
+  margin-right: 120px;
+}
 .footer .portfolio-paragraph {
   color: #f4f4fd;
   max-width: 264px;
