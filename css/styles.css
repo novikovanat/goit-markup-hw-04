@@ -262,6 +262,8 @@ body {
 .team-card {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .name-title {
   font-weight: 500;
@@ -271,7 +273,39 @@ body {
   color: #2e2f42;
   text-align: center;
 }
-
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-media-item {
+  width: 40px;
+  height: 40px;
+}
+.social-media-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: #404bbf;
+}
+.icon-social {
+  fill: #f4f4fd;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
 .team-role {
   font-size: 16px;
   line-height: 1.5;
